@@ -1,0 +1,45 @@
+﻿namespace ClinicApp;
+
+public class Patient
+{
+    private readonly Guid _id;
+    private readonly string _name;
+    private readonly string _email;
+
+    public Patient(string name, string email)
+    {
+        ContactValidator.Validate(name, email);
+        _id = Guid.NewGuid();
+        _name = name;
+        _email = email;
+
+        ClinicManager.GetInstance().AllPatients.Add(this);
+    }
+
+    public Patient(Guid id, string name, string email)
+    {
+        ContactValidator.Validate(name, email);
+        _id = id;
+        _name = name;
+        _email = email;
+
+
+    }
+
+    public Guid GetId()
+    {
+        return _id;
+    }
+
+    public string GetName()
+    {
+        return _name;
+    }
+
+    public string GetEmail()
+    {
+        return _email;
+    }
+
+
+}
