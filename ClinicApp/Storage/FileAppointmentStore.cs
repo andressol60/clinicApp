@@ -12,9 +12,9 @@ public class FileAppointmentStore : IAppointmentStore
         using var writer = new BinaryWriter(stream);
 
         writer.Write(appointment.id.ToByteArray());
-        writer.Write(appointment.pid.ToByteArray());
-        writer.Write(appointment.did.ToByteArray());
-        writer.Write(appointment.oid.ToByteArray());
+        writer.Write(appointment._patientId.ToByteArray());
+        writer.Write(appointment._dentistId.ToByteArray());
+        writer.Write(appointment._officeId.ToByteArray());
         writer.Write(appointment.dt1.ToBinary());
         writer.Write(appointment.dt2.ToBinary());
         writer.Write(appointment.st);

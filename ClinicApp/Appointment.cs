@@ -3,15 +3,15 @@
 public class Appointment
 {
     public Guid id;
-    public Guid pid;
-    public Guid did;
-    public Guid oid;
+    public Guid _patientId;
+    public Guid _dentistId;
+    public Guid _officeId;
     public int st;
     public DateTime dt1;
     public DateTime dt2;
     public bool flag1;
 
-    public Appointment(Guid pid, Guid did, Guid oid, DateTime dt1, DateTime dt2)
+    public Appointment(Guid patientId, Guid dentistId, Guid officeId, DateTime dt1, DateTime dt2)
     {
         if (dt1 > dt2)
         {
@@ -25,7 +25,7 @@ public class Appointment
         Patient p = null;
         foreach (Patient x in ClinicManager.GetInstance().AllPatients)
         {
-            if (x.GetId() == pid)
+            if (x.GetId() == patientId)
             {
                 p = x;
                 break;
@@ -34,7 +34,7 @@ public class Appointment
         Dentist d = null;
         foreach (Dentist x in ClinicManager.GetInstance().AllDentists)
         {
-            if (x.GetId() == did)
+            if (x.GetId() == dentistId)
             {
                 d = x;
                 break;
@@ -45,9 +45,9 @@ public class Appointment
             throw new Exception("error");
         }
 
-        this.pid = pid;
-        this.did = did;
-        this.oid = oid;
+        _patientId = _patientId;
+        _dentistId = dentistId;
+        _officeId = officeId;
         this.dt1 = dt1;
         this.dt2 = dt2;
         this.st = 1;
@@ -64,9 +64,9 @@ public class Appointment
     public Appointment(Guid id, Guid pid, Guid did, Guid oid, DateTime dt1, DateTime dt2, int st, bool flag1)
     {
         this.id = id;
-        this.pid = pid;
-        this.did = did;
-        this.oid = oid;
+        _patientId = pid;
+        _dentistId = did;
+        this._officeId = oid;
         this.dt1 = dt1;
         this.dt2 = dt2;
         this.st = st;

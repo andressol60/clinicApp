@@ -13,9 +13,9 @@ public class FileTextAppointmentStore : IAppointmentStore
     {
         string line = string.Join('|',
             appointment.id,
-            appointment.pid,
-            appointment.did,
-            appointment.oid,
+            appointment._patientId,
+            appointment._dentistId,
+            appointment._officeId,
             appointment.dt1.ToString("o", CultureInfo.InvariantCulture),
             appointment.dt2.ToString("o", CultureInfo.InvariantCulture),
             appointment.st,

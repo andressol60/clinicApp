@@ -26,9 +26,9 @@ public class FileJsonAppointmentStore : IAppointmentStore
         list.Add(new AppointmentDto
         {
             Id = appointment.id,
-            Pid = appointment.pid,
-            Did = appointment.did,
-            Oid = appointment.oid,
+            Pid = appointment._patientId,
+            Did = appointment._dentistId,
+            Oid = appointment._officeId,
             Dt1 = appointment.dt1,
             Dt2 = appointment.dt2,
             St = appointment.st,

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL PC\\Desktop\\ClinicApp_actualizado\\ClinicApp_actualizado\\ClinicApp\\ClinicApp\\ClinicApp.csproj",
+      "projectUniqueName": "C:\\Users\\DELL PC\\Desktop\\5to\\ClinicApp_actualizado\\ClinicApp_actualizado\\ClinicApp\\ClinicApp\\ClinicApp.csproj",
       "projectName": "ClinicApp",
-      "projectPath": "C:\\Users\\DELL PC\\Desktop\\ClinicApp_actualizado\\ClinicApp_actualizado\\ClinicApp\\ClinicApp\\ClinicApp.csproj",
+      "projectPath": "C:\\Users\\DELL PC\\Desktop\\5to\\ClinicApp_actualizado\\ClinicApp_actualizado\\ClinicApp\\ClinicApp\\ClinicApp.csproj",
       "packagesPath": "C:\\Users\\DELL PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL PC\\Desktop\\ClinicApp_actualizado\\ClinicApp_actualizado\\ClinicApp\\ClinicApp\\obj\\",
+      "outputPath": "C:\\Users\\DELL PC\\Desktop\\5to\\ClinicApp_actualizado\\ClinicApp_actualizado\\ClinicApp\\ClinicApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
